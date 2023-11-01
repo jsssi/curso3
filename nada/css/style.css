@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+.container{
+  border: 1px solid red;
+  position: relative;
+  padding: .5rem;
+  
+ 
+}
+.container video{
+  z-index: 0;
+  height: 40vh;
+  pointer-events: none;
+  border-radius: 1.0rem;
+}
+.container .modal-menu{
+  background: #fff;
+
+  position: absolute;
+
+  z-index: 0;
+
+  width: 5vh;
+  height: 100%;
+
+  
+}
+.container .modal-menu button{
+  position: absolute;
+
+  height: 2vh;
+  width: 1vw;
+  
+ bottom: 1rem;
+ left: 20%; 
+
+ cursor: pointer;
+
+ border: 1px solid red;
+
+
+}
+.remove-me{
+  display: none;
+}
+.container .buttons-box{
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3.0rem;
+
+  position: absolute;
+  top: 0;
+  left:.5;
+  z-index: 0;
+  opacity: 1;
+  
+
+  height: 100%;
+  pointer-events: none;
+
+
+}
+
+.buttons-box button img{
+  height: 2vh;
+}
+.buttons-box button{
+  height: 4vh;
+  width: 2vw;
+
+  border-radius: 1.0rem;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
